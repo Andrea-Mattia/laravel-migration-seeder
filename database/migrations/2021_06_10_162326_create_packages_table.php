@@ -23,7 +23,7 @@ class CreatePackagesTable extends Migration
             $table->tinyInteger('rooms')->unsigned();
             $table->text('description')->nullable();
             $table->text('activities')->nullable();
-            $table->mediumInteger('price')->unsigned();
+            $table->smallInteger('price_for_night')->unsigned();
             $table->boolean('is_available')->default(1);
             $table->timestamps();
         });
